@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pricingApp">
+  <head>
+    <title>Pricing</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/scroll_to_top.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/homepage_application.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-53688711-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <!--button back top-->
+    <div id="back-top">TOP</div>
+    <div class="main">
+      <div class="div-content">
+        <!--==============================header=================================-->
+        <header class="header_content">
+          <div class="container_12">
+            <div class="grid_12">
+              <h1><a href="index.html"><img class='homepage_logo' src="images/tapviral_homepage_logo.svg" alt="TapViral" ></a> </h1>
+              <nav>
+                <ul class="sf-menu">
+                  <li><a href="index.html"><span></span>Home<strong></strong></a></li>
+                  <li><a href="index-pricing.html">Pricing<strong></strong></a></li>
+                  <li><a href="index-contact.html">Contact Us<strong></strong></a></li>
+                  <li><a href="https://dashboard.tapviral.com/login">Login<strong></strong></a></li>
+                  <li><a href="https://dashboard.tapviral.com/signup">Sign Up<strong></strong></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <!--=======content================================-->
+        <div class="container_12 pricing-container"  style="margin-top: 50px" ng-controller="pricingController">
+          <h4 style="text-align: center;">PRICING</h4>
+          <p style="text-align: center; margin-top: 40px; margin-bottom: 10px">Here are some advertisement packages we offer.
+            You will also be able to build customized packages to fit your plans. To get more details, please join us.
+            <div class="col-xs-12 text-center" style="margin-bottom:50px">
+              <a href="https://dashboard.tapviral.com/signup" class="more_btn v2">Sign Up Now</a>
+            </div>
+            <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+              <div class="panel panel-defaultpackage" ng-class="{'panel-primarypackage' : hoverStarter}"
+                ng-mouseenter="hoverStarter = true"
+                ng-mouseleave="hoverStarter = false">
+                <div class="panel-heading text-center"><strong>Starter</strong>
+                  <p>$200</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item">500K - 1.5M Max Reach</li>
+                  <li class="list-group-item">3K - 8K Likes</li>
+                  <li class="list-group-item">Detailed Report</li>
+                  <li class="list-group-item">Email Support</li>
+                  <li class="list-group-item">Free ad design for a limited time</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+              <div class="panel panel-defaultpackage"
+                ng-class="{'panel-primarypackage' : hoverIndie}"
+                ng-mouseenter="hoverIndie = true"
+                ng-mouseleave="hoverIndie = false">
+                <div class="panel-heading text-center"><strong>Indie Developer</strong>
+                  <p>$400</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item">1.5M - 4M Max Reach</li>
+                  <li class="list-group-item">8K - 20K Likes</li>
+                  <li class="list-group-item">Detailed Report</li>
+                  <li class="list-group-item">Email Support</li>
+                  <li class="list-group-item">Free ad design for a limited time</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+              <div class="panel panel-defaultpackage"
+                ng-class="{'panel-primarypackage' : hoverSmallBiz}"
+                ng-mouseenter="hoverSmallBiz = true"
+                ng-mouseleave="hoverSmallBiz = false">
+                <div class="panel-heading text-center"><strong>Small business</strong>
+                  <p>$1000</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item">6M - 15M Max Reach</li>
+                  <li class="list-group-item">30K - 100K Likes</li>
+                  <li class="list-group-item">Detailed Report</li>
+                  <li class="list-group-item">Email Support</li>
+                  <li class="list-group-item">Free ad design for a limited time</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+              <div class="panel panel-defaultpackage"
+                ng-class="{'panel-primarypackage' : hoverEnterprise}"
+                ng-mouseenter="hoverEnterprise = true"
+                ng-mouseleave="hoverEnterprise = false">
+                <div class="panel-heading text-center"><strong>Enterprise</strong>
+                  <p>Contact us for details</p>
+                </div>
+                <ul class="list-group list-group-flush text-center">
+                  <li class="list-group-item">N/A</li>
+                  <li class="list-group-item">N/A</li>
+                  <li class="list-group-item">Detailed Report</li>
+                  <li class="list-group-item">Dedicated campaign manager</li>
+                  <li class="list-group-item">Free ad design for a limited time</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 text-center" style="margin-top:30px;">
+              <span class="text-center">Could not find the package you need? Please <a href="index-contact.html">contact us</a>.</span>
+              <p></p>
+              <a href="index-contact.html" class="more_btn v2">Contact us</a>
+            </div>
+          </div>
+          <!--=======footer=================================-->
+        </div>
+        <footer>
+          <div class="container_12">
+            <div class="grid_12">
+              <p class="txt5">TapViral (c) <span id="copyright-year"></span>  |  <a href="index-terms.html">Terms and Conditions</a><br><a rel="nofollow" href="mailto:support@tapviral.com" target="_blank">support@tapviral.com</a></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <span style="position:absolute; left:50%; margin-left:-60px; margin-top:10px; padding-bottom:20px" id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=Jt1fMdOtWIEIJeGOXkJxrkVpHKvmfnVizQWMef762w1elwmB7DrjODLYe9Q"></script></span>
+    </body>
+  </html>
